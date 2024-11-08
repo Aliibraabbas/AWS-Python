@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "paths": {
+    "/manageUser": {
+      "name": "/manageUser",
+      "lambdaFunction": "userManagment",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}
