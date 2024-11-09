@@ -1,4 +1,6 @@
-{ "headers": 
-{
-    "x-api-key": "ff87621b-b773-4abe-95c1-2c115a620c30"
-} }
+{ 
+    "httpMethod": "GET",
+    "headers": {
+        "x-api-key": "12ab6ce4-1cb6-41dd-baab-298bbb9312e6"
+    }
+}

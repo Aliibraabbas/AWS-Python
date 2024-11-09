@@ -1,0 +1,7 @@
+{
+    "httpMethod": "POST",
+    "body": {
+      "email": "test2@email.com"
+    }
+  }
+  

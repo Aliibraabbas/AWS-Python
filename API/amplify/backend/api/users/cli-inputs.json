@@ -7,6 +7,13 @@
       "permissions": {
         "setting": "open"
       }
+    },
+    "/getToken": {
+      "name": "/getToken",
+      "lambdaFunction": "apiiim997f3029",
+      "permissions": {
+        "setting": "open"
+      }
     }
   }
 }

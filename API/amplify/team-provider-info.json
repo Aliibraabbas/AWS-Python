@@ -15,7 +15,15 @@
       "function": {
         "userManagment": {
           "deploymentBucketName": "amplify-apiiim-dev-7edc2-deployment",
-          "s3Key": "amplify-builds/userManagment-6f73484445494c53744e-build.zip"
+          "s3Key": "amplify-builds/userManagment-4c73544259592b513465-build.zip"
+        },
+        "apiiim997f3029": {
+          "deploymentBucketName": "amplify-apiiim-dev-7edc2-deployment",
+          "s3Key": "amplify-builds/apiiim997f3029-47315354734e4f7a4950-build.zip"
+        },
+        "addUser": {
+          "deploymentBucketName": "amplify-apiiim-dev-7edc2-deployment",
+          "s3Key": "amplify-builds/addUser-696a6743353453504a41-build.zip"
         }
       },
       "api": {

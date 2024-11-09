@@ -9,6 +9,14 @@
           ],
           "category": "function",
           "resourceName": "userManagment"
+        },
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "apiiim997f3029"
         }
       ],
       "providerPlugin": "awscloudformation",
@@ -16,10 +24,37 @@
     }
   },
   "function": {
-    "apiiimutils": {
+    "addUser": {
       "build": true,
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn",
+            "StreamArn"
+          ],
+          "category": "storage",
+          "resourceName": "users"
+        }
+      ],
       "providerPlugin": "awscloudformation",
-      "service": "LambdaLayer"
+      "service": "Lambda"
+    },
+    "apiiim997f3029": {
+      "build": true,
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn",
+            "StreamArn"
+          ],
+          "category": "storage",
+          "resourceName": "users"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
     },
     "userManagment": {
       "build": true,
@@ -39,6 +74,38 @@
     }
   },
   "parameters": {
+    "AMPLIFY_function_addUser_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "addUser"
+        }
+      ]
+    },
+    "AMPLIFY_function_addUser_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "addUser"
+        }
+      ]
+    },
+    "AMPLIFY_function_apiiim997f3029_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "apiiim997f3029"
+        }
+      ]
+    },
+    "AMPLIFY_function_apiiim997f3029_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "apiiim997f3029"
+        }
+      ]
+    },
     "AMPLIFY_function_userManagment_deploymentBucketName": {
       "usedBy": [
         {

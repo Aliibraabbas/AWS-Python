@@ -7,8 +7,19 @@ export type AmplifyDependentResourcesAttributes = {
     }
   },
   "function": {
-    "apiiimutils": {
-      "Arn": "string"
+    "addUser": {
+      "Arn": "string",
+      "LambdaExecutionRole": "string",
+      "LambdaExecutionRoleArn": "string",
+      "Name": "string",
+      "Region": "string"
+    },
+    "apiiim997f3029": {
+      "Arn": "string",
+      "LambdaExecutionRole": "string",
+      "LambdaExecutionRoleArn": "string",
+      "Name": "string",
+      "Region": "string"
     },
     "userManagment": {
       "Arn": "string",
